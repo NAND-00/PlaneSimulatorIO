@@ -1,4 +1,4 @@
-﻿
+
 #include "XPLMDisplay.h"
 #include "XPLMGraphics.h"
 #include <string.h>
@@ -339,7 +339,8 @@ PLUGIN_API int XPluginStart(
 	pFlapDeployRatio = XPLMFindDataRef("sim/flightmodel2/controls/flap_handle_deploy_ratio");
 	pElevatorTrimDeployRatio = XPLMFindDataRef("sim/flightmodel2/controls/elevator_trim");
 	pRudderTrimDeployRatio = XPLMFindDataRef("sim/flightmodel2/controls/rudder_trim");
-	pAutopilotMode = XPLMFindDataRef("sim/cockpit/autopilot/autopilot_mode");
+	//pAutopilotMode = XPLMFindDataRef("sim/cockpit/autopilot/autopilot_mode");
+	pAutopilotMode = XPLMFindDataRef("sim/cockpit2/autopilot/servos_on");
 
 	XPLMGetSystemPath(outputPath);
 	strcat(outputPath, "calibrationValues.txt");
