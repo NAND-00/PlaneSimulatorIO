@@ -155,7 +155,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CockpitIOPlugin.cpp" />
+    <ClCompile Include="globalVariables.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="handlers.cpp" />
     <ClCompile Include="hid.cpp" />
+    <ClCompile Include="hidCommunication.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics.hpp" />
+    <ClInclude Include="globalVariables.hpp" />
+    <ClInclude Include="handlers.hpp" />
+    <ClInclude Include="hidCommunication.hpp" />
+    <ClInclude Include="utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
